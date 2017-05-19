@@ -228,7 +228,7 @@ void loop(){
        g16_ppm2_angle_deg != g16_ppm2_angle_deg_backup)
     {
     
-      //Serial.println(ch[1]);  
+      Serial.println(ch[1]);  
       u8g2.firstPage();  
       do {
         read_mode();
@@ -463,5 +463,4 @@ void read_ppm_int(void) {
     
     attachPinChangeInterrupt(4, read_ppm_int, CHANGE);
 } 
-
 //-----------------------------------[ END ]---------------------------------------
